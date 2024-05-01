@@ -1,5 +1,7 @@
 <?php
 // TRUE mustra 1, false muestra 0
 echo FALSE;
-# asi se puede colocar tambien 
+# Colocar para que salga flat.
 var_dump (7.5);
+
+// tipos de datos
