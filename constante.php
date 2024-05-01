@@ -1,5 +1,9 @@
 <?php
 
-define("NOMBRE","Juan Francisco");
+const NOMBRE1="Ashley";
 
-echo NOMBRE;
+echo NOMBRE1;
+
+define ("NOMBRE2", "Juan Francisco");
+
+echo NOMBRE2;
