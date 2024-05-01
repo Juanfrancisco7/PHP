@@ -1,5 +1,5 @@
 <?php
 
-define("NOMBRE","Juan");
+define("NOMBRE","Juan Francisco");
 
 echo NOMBRE;
