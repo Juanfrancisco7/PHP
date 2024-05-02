@@ -1,7 +1,7 @@
 <?php
 
 // Definimos una variable que representa el día de la semana
-$dia = "martes";
+$dia = "lunes";
 
 // Usamos la expresión match para evaluar diferentes casos según el valor de la variable $dia
 $mensaje = match($dia) {
