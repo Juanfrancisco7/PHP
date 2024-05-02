@@ -2,7 +2,7 @@
 
 $num = 1;
 
-while ($num <= 5) {
+while ($num <= 100) {
     echo $num . "<br>";
     $num++;
 }
