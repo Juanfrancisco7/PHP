@@ -4,3 +4,5 @@ $estudiantes=array("carlos", "Juan", "pepe");
 $estudiantes[2]="daniel";
 // asi modifico los valores del array
 echo $estudiantes [2];
+
+
