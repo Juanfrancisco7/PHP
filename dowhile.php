@@ -1,8 +1,8 @@
 <?php
 
-$num = 0;
+$num = 1;
 
-while ($num <= 100) {
+do {
     echo $num . "<br>";
     $num++;
-}
+} while ($num <= 5);
