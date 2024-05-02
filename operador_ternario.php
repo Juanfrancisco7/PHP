@@ -14,4 +14,4 @@ En este ejemplo, si la edad es mayor o igual a 18, se asignará el
 mensaje "Eres mayor de edad" a la variable $mensaje; de lo contrario, 
 se asignará "Eres menor de edad". Luego, se imprime el contenido de 
 la variable $mensaje.
-/*
+*/
