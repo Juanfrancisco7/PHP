@@ -26,7 +26,15 @@
         } else {
             echo "Tienes 20 años.";
         }
+        /* $_POST es una superglobal en PHP que se utiliza para recoger datos enviados
+         a un script PHP desde un formulario HTML utilizando el método HTTP POST. 
+         Cuando un formulario HTML se envía utilizando el método POST, los datos
+          del formulario se envían al servidor y se almacenan en el array asociativo
+           $_POST en PHP.
+         /*
     }
     ?>
+
+    
 </body>
 </html>
