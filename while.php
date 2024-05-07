@@ -1,6 +1,6 @@
 <?php
 
-$num = 0;
+$num = 1;
 
 while ($num <= 100) {
     echo $num . "<br>";
