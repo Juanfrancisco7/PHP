@@ -1,4 +1,4 @@
-k!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -13,7 +13,7 @@ k!DOCTYPE html>
 <li><a href="index2.php">Segundo</a></li>
 </ul>
 </nav>
-<h1>Pagina principal</h1>
+<h1>Pagina secundaria</h1>
 <footer>
 pie de pagina
 </footer>
