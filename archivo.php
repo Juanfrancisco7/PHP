@@ -6,7 +6,7 @@
 </head>
 <body>
     <h3>Subir archivo</h3>
-<form action="carga.php" method="POST" enctype="multipart/form-data">
+<form action="carga.php" method="POST" enctype="multipart/form">
     <input type="file" name="fichero">
     <br> <br>
     <button type="submit">Enviar</button>
