@@ -11,5 +11,6 @@
     <br> <br>
     <button type="submit">Enviar</button>
 </form>
+<script src="ajax.js"></script>
 </body>
 </html>
