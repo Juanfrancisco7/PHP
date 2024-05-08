@@ -1,17 +1,19 @@
 <?php
+// Verificar si se ha enviado un archivo por el método POST tradicional
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['archivo'])) {
+    $archivo = $_FILES['archivo'];
+    $nombreArchivo = $archivo['name'];
+    $rutaDestino = 'archivos/' . $nombreArchivo;
 
-// Verificar si el directorio "archivos" no existe
-if (!is_dir("archivos")) {
-    // Intentar crear el directorio "archivos"
-    if (!mkdir("archivos", 0777)) {
-        echo "Error al crear el directorio";
-        exit(); // Salir del script si no se pudo crear el directorio
+    if (move_uploaded_file($archivo['tmp_name'], $rutaDestino)) {
+        echo "El archivo $nombreArchivo se ha subido correctamente.";
+    } else {
+        echo "Error al subir el archivo $nombreArchivo.";
     }
-    // Asignar permisos al directorio "archivos"
-    chmod("archivos", 0777);
+    exit(); // Salir del script
 }
 
-// Verificar si se ha enviado un archivo
+// Si no se ha enviado un archivo por el método POST tradicional, verificar si se ha enviado por AJAX
 if (isset($_FILES["fichero"]) && $_FILES["fichero"]["error"] === UPLOAD_ERR_OK) {
     // Mover el archivo cargado al directorio "archivos"
     $nombre_archivo = $_FILES["fichero"]["name"];
@@ -25,3 +27,4 @@ if (isset($_FILES["fichero"]) && $_FILES["fichero"]["error"] === UPLOAD_ERR_OK) 
     echo "No se ha seleccionado ningún archivo o ha ocurrido un error durante la carga.";
 }
 ?>
+

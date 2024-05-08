@@ -1,5 +1,3 @@
-// ajax.js
-
 const subirArchivo = () => {
     const formulario = document.querySelector('.FormularioAjax');
     const archivoInput = formulario.querySelector('input[type="file"]');
@@ -26,3 +24,5 @@ document.addEventListener('DOMContentLoaded', () => {
         subirArchivo();
     });
 });
+
+//en ajax me esta dando error, verificar mas adelante porque no esta funcionando correctamente. 
